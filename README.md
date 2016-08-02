@@ -8,8 +8,8 @@ This tool is used to compress kernel and recovery ramdisks to save up the space 
 	* compression tool - This repository. Clone this repository in device/vendor_name/device_name.
 * Add those line to **BoardConfig.mk** file .
 	* # LZMA compression for recovery's & kernel ramdisk....
-	* #BOARD_CUSTOM_BOOTIMG_MK := device/vendor_name/device_name/custombootimg.mk
-	* #BOARD_CANT_BUILD_RECOVERY_FROM_BOOT_PATCH := true
+	* BOARD_CUSTOM_BOOTIMG_MK := device/vendor_name/device_name/custombootimg.mk
+	* BOARD_CANT_BUILD_RECOVERY_FROM_BOOT_PATCH := true
 
 * Enjoy 
 
