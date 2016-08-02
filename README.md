@@ -16,6 +16,7 @@ This tool is used to compress kernel and recovery ramdisks to save up the space 
 #### Note
 * This tool should work with any device .
 * LZMA compression takes more time to decompress than GZIP but When I tested it didn't take more than 1 or 2 more seconds to decompress .
+* You won't be able to decompress boot.img or recovery.img using boot-repacker or unpack tool for linux as you will get an error because those tools won't be able to decompress ramdisks for recovery or kernel -boot-repacker only gives you kernel zImage- and If you want to edit anything in ramdisk you will need to build it again from source !!!
 
 ## This tool derived from
 	* http://review.cyanogenmod.org/#/c/96227/
